@@ -1,0 +1,27 @@
+.sp-nav {
+  display: flex;
+  flex-direction: row;
+  background: $sp-color;
+  color: black;
+
+  h3 {
+    padding: 0em 2em;
+    cursor: default;
+  }
+
+  h5 {
+    padding: 0em 1em;
+    cursor: pointer;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  border-bottom: 1px $sp-color solid;
+}

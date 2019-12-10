@@ -1,0 +1,56 @@
+.sp-grid {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  h5 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  grid-row-gap: 10px;
+}
+
+img {
+  margin: auto;
+  margin-top: 5em;
+  width: 300px;
+  display: block;
+}
+
+.network-wrapper {
+  grid-column-start: 1;
+}
+
+.collabs-div {
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+
+@mixin col-layout($start, $end) {
+  .col-#{$start}-#{$end} {
+    grid-column-start: $start;
+    grid-column-end: $end;
+  }
+}
+
+@for $j from 1 through 6 {
+  @for $i from 1 through 6 {
+    @include col-layout($i, $j);
+  }
+}
+
+.padded {
+  padding: 20px;
+}
+
+.datalink {
+  a {
+    margin-left: 10px;
+    color: rgb(0, 81, 255);
+  }
+
+  a:hover {
+    border: 1px solid rgb(0, 81, 255);
+    cursor: pointer;
+  }
+}

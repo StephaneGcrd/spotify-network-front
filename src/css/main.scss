@@ -1,0 +1,15 @@
+$sp-color: #1db954;
+$sp-shadow: 2px 2px 2px rgba(29, 185, 84, 0.3);
+$sp-shadow-dark: 2px 2px 2px rgba(17, 109, 49, 0.3);
+
+@import "navbar.scss";
+@import "network.scss";
+@import "grid.scss";
+
+button {
+  border: none;
+  background: #1db954;
+  color: white;
+  border-radius: 3px;
+  box-shadow: $sp-shadow;
+}

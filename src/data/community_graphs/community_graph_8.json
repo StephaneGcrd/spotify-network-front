@@ -1,0 +1,67 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "weight": 5,
+      "collabs": [
+        ["Yung Gravy", 1],
+        ["LIL MAYO", 1],
+        ["Lentra", 15],
+        ["Y2K", 4],
+        ["Dbangz", 1]
+      ],
+      "community": 8,
+      "id": "bbno$"
+    },
+    {
+      "weight": 2,
+      "collabs": [["Bandingo YGNE", 1], ["Dbangz", 1]],
+      "community": 8,
+      "id": "Lil Noodle"
+    },
+    { "weight": 1, "collabs": [["bbno$", 4]], "community": 8, "id": "Y2K" },
+    {
+      "weight": 6,
+      "collabs": [
+        ["Pouya", 1],
+        ["bbno$", 8],
+        ["LIL MAYO", 1],
+        ["Lil Baby", 1],
+        ["Ugly God", 1],
+        ["Y2K", 1]
+      ],
+      "community": 8,
+      "id": "Yung Gravy"
+    },
+    { "weight": 1, "collabs": [["bbno$", 1]], "community": 8, "id": "Lentra" },
+    {
+      "weight": 1,
+      "collabs": [["Ying Yang Twins", 1]],
+      "community": 8,
+      "id": "Pouya"
+    },
+    { "id": "LIL MAYO" },
+    { "id": "Dbangz" },
+    { "id": "Bandingo YGNE" },
+    { "id": "Lil Baby" },
+    { "id": "Ugly God" },
+    { "id": "Ying Yang Twins" }
+  ],
+  "links": [
+    { "weight": 9, "source": "bbno$", "target": "Yung Gravy" },
+    { "weight": 1, "source": "bbno$", "target": "LIL MAYO" },
+    { "weight": 16, "source": "bbno$", "target": "Lentra" },
+    { "weight": 8, "source": "bbno$", "target": "Y2K" },
+    { "weight": 1, "source": "bbno$", "target": "Dbangz" },
+    { "weight": 1, "source": "Lil Noodle", "target": "Bandingo YGNE" },
+    { "weight": 1, "source": "Lil Noodle", "target": "Dbangz" },
+    { "weight": 1, "source": "Y2K", "target": "Yung Gravy" },
+    { "weight": 1, "source": "Yung Gravy", "target": "Pouya" },
+    { "weight": 1, "source": "Yung Gravy", "target": "LIL MAYO" },
+    { "weight": 1, "source": "Yung Gravy", "target": "Lil Baby" },
+    { "weight ": 1, "source": "Yung Gravy", "target": "Ugly God" },
+    { "weight": 1, "source": "Pouya", "target": "Ying Yang Twins" }
+  ]
+}
