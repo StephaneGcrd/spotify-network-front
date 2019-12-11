@@ -1,22 +1,42 @@
 {
   "files": {
-    "main.css": "/spotify-network-front/static/css/main.5d579ce8.chunk.css",
-    "main.js": "/spotify-network-front/static/js/main.c2bc344d.chunk.js",
-    "main.js.map": "/spotify-network-front/static/js/main.c2bc344d.chunk.js.map",
+    "main.css": "/spotify-network-front/static/css/main.78345ce9.chunk.css",
+    "main.js": "/spotify-network-front/static/js/main.3e201a06.chunk.js",
+    "main.js.map": "/spotify-network-front/static/js/main.3e201a06.chunk.js.map",
     "runtime-main.js": "/spotify-network-front/static/js/runtime-main.83eda833.js",
     "runtime-main.js.map": "/spotify-network-front/static/js/runtime-main.83eda833.js.map",
-    "static/js/2.ac9800b0.chunk.js": "/spotify-network-front/static/js/2.ac9800b0.chunk.js",
-    "static/js/2.ac9800b0.chunk.js.map": "/spotify-network-front/static/js/2.ac9800b0.chunk.js.map",
+    "static/js/2.fe987cdd.chunk.js": "/spotify-network-front/static/js/2.fe987cdd.chunk.js",
+    "static/js/2.fe987cdd.chunk.js.map": "/spotify-network-front/static/js/2.fe987cdd.chunk.js.map",
     "index.html": "/spotify-network-front/index.html",
-    "precache-manifest.98ee730d90b7798b8d56f50267c786ee.js": "/spotify-network-front/precache-manifest.98ee730d90b7798b8d56f50267c786ee.js",
+    "precache-manifest.ee4a00d10f3b24b70db90cee886824cd.js": "/spotify-network-front/precache-manifest.ee4a00d10f3b24b70db90cee886824cd.js",
     "service-worker.js": "/spotify-network-front/service-worker.js",
-    "static/css/main.5d579ce8.chunk.css.map": "/spotify-network-front/static/css/main.5d579ce8.chunk.css.map",
-    "static/media/draw.svg": "/spotify-network-front/static/media/draw.f5f82c90.svg"
+    "static/css/main.78345ce9.chunk.css.map": "/spotify-network-front/static/css/main.78345ce9.chunk.css.map",
+    "static/media/draw.svg": "/spotify-network-front/static/media/draw.f5f82c90.svg",
+    "static/media/sentiment0.png": "/spotify-network-front/static/media/sentiment0.67c99dc0.png",
+    "static/media/sentiment1.png": "/spotify-network-front/static/media/sentiment1.0c958476.png",
+    "static/media/sentiment2.png": "/spotify-network-front/static/media/sentiment2.9baf81e7.png",
+    "static/media/sentiment3.png": "/spotify-network-front/static/media/sentiment3.89a26341.png",
+    "static/media/sentiment4.png": "/spotify-network-front/static/media/sentiment4.bdcb6871.png",
+    "static/media/sentiment5.png": "/spotify-network-front/static/media/sentiment5.77f94520.png",
+    "static/media/sentiment6.png": "/spotify-network-front/static/media/sentiment6.88e2813b.png",
+    "static/media/sentiment7.png": "/spotify-network-front/static/media/sentiment7.5a84b3fa.png",
+    "static/media/sentiment8.png": "/spotify-network-front/static/media/sentiment8.4f1ca501.png",
+    "static/media/sentiment9.png": "/spotify-network-front/static/media/sentiment9.97f1aba5.png",
+    "static/media/wordcloud0.png": "/spotify-network-front/static/media/wordcloud0.b66f1cb4.png",
+    "static/media/wordcloud1.png": "/spotify-network-front/static/media/wordcloud1.068acf0e.png",
+    "static/media/wordcloud2.png": "/spotify-network-front/static/media/wordcloud2.58c32ba4.png",
+    "static/media/wordcloud3.png": "/spotify-network-front/static/media/wordcloud3.70376ad8.png",
+    "static/media/wordcloud4.png": "/spotify-network-front/static/media/wordcloud4.45762026.png",
+    "static/media/wordcloud5.png": "/spotify-network-front/static/media/wordcloud5.36e0cf50.png",
+    "static/media/wordcloud6.png": "/spotify-network-front/static/media/wordcloud6.b331c08e.png",
+    "static/media/wordcloud7.png": "/spotify-network-front/static/media/wordcloud7.25fecfb9.png",
+    "static/media/wordcloud8.png": "/spotify-network-front/static/media/wordcloud8.cbc3447d.png",
+    "static/media/wordcloud9.png": "/spotify-network-front/static/media/wordcloud9.dac7e764.png"
   },
   "entrypoints": [
     "static/js/runtime-main.83eda833.js",
-    "static/js/2.ac9800b0.chunk.js",
-    "static/css/main.5d579ce8.chunk.css",
-    "static/js/main.c2bc344d.chunk.js"
+    "static/js/2.fe987cdd.chunk.js",
+    "static/css/main.78345ce9.chunk.css",
+    "static/js/main.3e201a06.chunk.js"
   ]
 }
