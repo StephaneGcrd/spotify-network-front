@@ -52,8 +52,8 @@ function App() {
                 <hr />
                 <div>
                   <i>
-                    Stéphane Guichard (s192576), Anelia Pethrova (), Atharva
-                    Brath ()
+                    Atharva Brath (s191397), Anelia Pethrova (s191938),Stéphane
+                    Guichard (s192576)
                   </i>
                 </div>
                 <img src={draw} />

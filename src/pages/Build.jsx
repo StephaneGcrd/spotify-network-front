@@ -27,13 +27,18 @@ const Build = () => {
       <div className="col-1-6 padded datalink">
         <h5>Download datasets</h5>
         <hr />
-        <a href="rapGraph.json">Artist dataset</a>
-        <a>Songs dataset</a>
-        <a>Network JSON</a>
+        <a href="artistssongdataset.json">Artist dataset (JSON)</a>
+        <a href="lyrics_final.zip">Songs dataset (Compressed)</a>
+        <a href="rapGraph.json">Network (JSON)</a>
       </div>
       <div className="col-1-6 padded ">
         <h5>Notebook</h5>
         <hr />
+        <iframe
+          title="static_html"
+          className="pythonFrame col-1-6"
+          src="GetArtists_cleaned.html"
+        ></iframe>
       </div>
     </React.Fragment>
   );

@@ -22,7 +22,31 @@ import wc7 from "../wclouds/wordcloud7.png";
 import wc8 from "../wclouds/wordcloud8.png";
 import wc9 from "../wclouds/wordcloud9.png";
 
+import sent0 from "../sentiments/sentiment0.png";
+import sent1 from "../sentiments/sentiment1.png";
+import sent2 from "../sentiments/sentiment2.png";
+import sent3 from "../sentiments/sentiment3.png";
+import sent4 from "../sentiments/sentiment4.png";
+import sent5 from "../sentiments/sentiment5.png";
+import sent6 from "../sentiments/sentiment6.png";
+import sent7 from "../sentiments/sentiment7.png";
+import sent8 from "../sentiments/sentiment8.png";
+import sent9 from "../sentiments/sentiment9.png";
+
 const wordclouds = [wc0, wc1, wc2, wc3, wc4, wc5, wc6, wc7, wc8, wc9];
+
+const sentiments = [
+  sent0,
+  sent1,
+  sent2,
+  sent3,
+  sent4,
+  sent5,
+  sent6,
+  sent7,
+  sent8,
+  sent9
+];
 
 const full_data = [];
 
@@ -389,16 +413,29 @@ const ArtistList = ({ displayedData, full_data }) => {
 
 const ArtistStats = ({ displayedData }) => {
   const sentimentScore = {
-    "0": 4.258,
-    "1": 4.314,
-    "2": 4.307,
-    "3": 4.305,
-    "4": 4.088,
-    "5": 4.098,
-    "6": 4.969,
-    "7": 4.5,
-    "8": 4.589,
-    "9": "N/A"
+    "0": 5.39,
+    "1": 5.37,
+    "2": 5.28,
+    "3": 5.39,
+    "4": 5.32,
+    "5": 5.38,
+    "6": 5.28,
+    "7": 5.5,
+    "8": 5.3,
+    "9": 5.509
+  };
+
+  const top = {
+    "0": ["London", "Gucci", "Henny", "Nike", "Cali"],
+    "1": ["Gucci", "Henny", "New York", "Chanel", "London"],
+    "2": ["Bentley", "Chanel", "Gucci", "Glock", "Patek"],
+    "3": ["Atlanta", "Gucci", "Henny", "Bentley", "Paris"],
+    "4": ["Dre", "Snoop", "California", "New York", "Ice Cube"],
+    "5": ["Brooklyn", "New York", "Queens", "Earth", "Wu-Tang"],
+    "6": ["Mike", "Porsche", "Jordan", "EarDrummers", "Kim Kardashian"],
+    "7": ["Jack", "Africa", "Ben", "Jerusalem", "Faberge"],
+    "8": ["Mayo", "Instagram", "DBangz", "Henny", "Jack"],
+    "9": ["IAMDDB", "DDB", "Bougie", "Henny", "Uber"]
   };
 
   const medianYear = [
@@ -426,8 +463,27 @@ const ArtistStats = ({ displayedData }) => {
         </span>
       </div>
       <br />
-      <h3>Word Cloud</h3>
-      <img className="wordcloud-img" src={wordclouds[displayedData]} />
+      <h3>Top 5 referenced named entities</h3>
+      {top[displayedData].map(word => (
+        <span
+          style={{ border: "solid 1px black", marginRight: 10, padding: 4 }}
+        >
+          {" " + word + " "}
+        </span>
+      ))}
+      <br />
+      <br />
+      <div className="images-stats-com">
+        <div>
+          <h3>Word Cloud</h3>
+          <img className="wordcloud-img" src={wordclouds[displayedData]} />
+        </div>
+        <div>
+          {" "}
+          <h3>Sentiment distribution</h3>
+          <img className="wordcloud-img" src={sentiments[displayedData]} />
+        </div>
+      </div>
     </React.Fragment>
   );
 };
