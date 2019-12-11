@@ -30,6 +30,16 @@ function App() {
             <Route path="/insights">
               <Insights />
             </Route>
+            <Route path="/notebook">
+              <a href="Master_Explainer_Notebook.ipynb">
+                Download jupyter format
+              </a>
+              <iframe
+                title="static_html"
+                className="pythonFrame col-1-6"
+                src="Master_Explainer_Notebook.html"
+              ></iframe>
+            </Route>
             <Route exactPath="/">
               <div className="col-1-6">
                 <div>Hi, we are Stéphane, Anelia and Atharva. </div>

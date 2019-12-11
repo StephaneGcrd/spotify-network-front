@@ -39,15 +39,6 @@ const Build = () => {
         <a href="rapGraph.json">Network (JSON)</a>
         <a href="song_info.csv">Song List (CSV)</a>
       </div>
-      <div className="col-1-6 padded ">
-        <h5>Notebook</h5>
-        <hr />
-        <iframe
-          title="static_html"
-          className="pythonFrame col-1-6"
-          src="GetArtists_cleaned.html"
-        ></iframe>
-      </div>
     </React.Fragment>
   );
 };

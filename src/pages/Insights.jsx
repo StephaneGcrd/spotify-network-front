@@ -98,11 +98,6 @@ const Insights = () => {
           <img src={plot3} />
         </div>
       </div>
-      <iframe
-        title="static_html"
-        className="pythonFrame col-1-6"
-        src="LoadTracks_cleaned.html"
-      ></iframe>
     </React.Fragment>
   );
 };
