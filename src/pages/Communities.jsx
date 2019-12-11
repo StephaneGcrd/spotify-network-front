@@ -11,6 +11,19 @@ import data_7 from "../data/community_graphs/community_graph_7";
 import data_8 from "../data/community_graphs/community_graph_8";
 import data_9 from "../data/community_graphs/community_graph_9";
 
+import wc0 from "../wclouds/wordcloud0.png";
+import wc1 from "../wclouds/wordcloud1.png";
+import wc2 from "../wclouds/wordcloud2.png";
+import wc3 from "../wclouds/wordcloud3.png";
+import wc4 from "../wclouds/wordcloud4.png";
+import wc5 from "../wclouds/wordcloud5.png";
+import wc6 from "../wclouds/wordcloud6.png";
+import wc7 from "../wclouds/wordcloud7.png";
+import wc8 from "../wclouds/wordcloud8.png";
+import wc9 from "../wclouds/wordcloud9.png";
+
+const wordclouds = [wc0, wc1, wc2, wc3, wc4, wc5, wc6, wc7, wc8, wc9];
+
 const full_data = [];
 
 full_data.push(data_0);
@@ -387,6 +400,19 @@ const ArtistStats = ({ displayedData }) => {
     "8": 4.589,
     "9": "N/A"
   };
+
+  const medianYear = [
+    2018,
+    2018,
+    2018,
+    2018,
+    2003,
+    1999,
+    2018,
+    2017,
+    2018,
+    2017
+  ];
   return (
     <React.Fragment>
       <h3>Statistics</h3>
@@ -395,7 +421,13 @@ const ArtistStats = ({ displayedData }) => {
           Happiness Score :{" "}
           <b>{(sentimentScore[displayedData] * 10).toFixed(2)} % </b>
         </span>
+        <span className="kpi">
+          Median year : <b>{medianYear[displayedData]}</b>
+        </span>
       </div>
+      <br />
+      <h3>Word Cloud</h3>
+      <img className="wordcloud-img" src={wordclouds[displayedData]} />
     </React.Fragment>
   );
 };

@@ -122,5 +122,10 @@ svg {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
   border: solid 1px rgb(221, 221, 221);
   margin-right: 10px;
-  max-height: 400px;
+  height: 400px;
+}
+
+.wordcloud-img {
+  width: 50%;
+  margin-top: 0;
 }
