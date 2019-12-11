@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/main.scss";
 import NetworkRap from "./pages/NetworkRap";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Communities from "./pages/Communities";
 import Insigths from "./pages/Insights";
@@ -10,7 +10,7 @@ import Build from "./pages/Build";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <Navbar />
         <div className="sp-grid">
@@ -62,7 +62,7 @@ function App() {
           </Switch>
         </div>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 

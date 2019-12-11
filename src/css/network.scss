@@ -1,5 +1,6 @@
 svg {
   margin: auto;
+  margin-top: 0;
   display: block;
 }
 
@@ -74,9 +75,24 @@ svg {
 }
 
 .change_btn {
-  padding: 0.2rem 0.6rem;
+  font-size: 13px;
+  margin-right: 5px;
+  padding: 6px 15px;
   border-radius: 3px;
-  margin: 0.2rem 0.2rem;
+
+  background: rgb(201, 207, 238);
+  color: rgb(72, 71, 80);
+  box-shadow: initial;
+
+  &:hover {
+    background: rgb(158, 163, 187);
+  }
+
+  &.active-c {
+    background: rgb(56, 61, 85);
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .pythonFrame {
@@ -89,4 +105,22 @@ svg {
   font-size: 12px;
   margin-bottom: 5px;
   float: right;
+}
+
+.kpi {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background: $sp-color;
+  border-radius: 5px;
+  color: white;
+  box-shadow: $sp-shadow;
+  display: inline-block;
+}
+
+.network-com {
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  border: solid 1px rgb(221, 221, 221);
+  margin-right: 10px;
+  max-height: 400px;
 }

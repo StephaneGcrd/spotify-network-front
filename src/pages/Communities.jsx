@@ -42,6 +42,7 @@ const colorsCom = [
 /* Component */
 const Communities = props => {
   const [name, setName] = useState("");
+  const [view, toggleView] = useState(false);
 
   const [displayedData, setDisplayed] = useState(0);
 
@@ -247,63 +248,153 @@ const Communities = props => {
 
   return (
     <React.Fragment>
-      <svg
-        className="d3-component col-1-3"
-        width={500}
-        height={500}
-        viewBox="0 0 2000 2300"
-        ref={d3Container}
-      />
-      <div className="col-3-6">
-        <h5 style={{ "margin-bottom": 3 }}>Select a community number:</h5>{" "}
-        <button className="change_btn" onClick={() => setDisplayed(0)}>
-          0
-        </button>
-        <button className="change_btn" onClick={() => setDisplayed(1)}>
-          1
-        </button>
-        <button className="change_btn" onClick={() => setDisplayed(2)}>
-          2
-        </button>
-        <button className="change_btn" onClick={() => setDisplayed(3)}>
-          3
-        </button>
-        <button className="change_btn" onClick={() => setDisplayed(4)}>
-          4
-        </button>
-        <button className="change_btn" onClick={() => setDisplayed(5)}>
-          5
-        </button>
-        <button className="change_btn" onClick={() => setDisplayed(6)}>
-          6
-        </button>
-        <button className="change_btn" onClick={() => setDisplayed(7)}>
-          7
-        </button>
-        <button className="change_btn" onClick={() => setDisplayed(8)}>
-          8
-        </button>
-        <button className="change_btn" onClick={() => setDisplayed(9)}>
-          9
-        </button>
-        <hr />
-        <h5 style={{ "margin-top": 3, "margin-bottom": 3 }}>
-          Artists in the community n°{displayedData}
-        </h5>
-        <div>
-          <div className="artist-collab-div">
-            {full_data[displayedData].nodes.map(node => {
-              if (node.weight) {
-                return (
-                  <span className="artist-collab">
-                    {node.id} <span className="nb-icon">{node.weight}</span>
-                  </span>
-                );
-              }
-              return null;
-            })}
-          </div>
+      <div className="network-com col-1-3">
+        <svg
+          className="d3-component "
+          width={300}
+          height={300}
+          viewBox="0 0 2000 2000"
+          ref={d3Container}
+        />
+      </div>
+
+      <div className="col-3-6 ">
+        <div className="selection-comm">
+          <h5 style={{ "margin-bottom": 3 }}>Select a community number:</h5>{" "}
+          <button
+            className={"change_btn " + (displayedData == 0 ? "active-c" : "")}
+            onClick={() => setDisplayed(0)}
+          >
+            0
+          </button>
+          <button
+            className={"change_btn " + (displayedData === 1 ? "active-c" : "")}
+            onClick={() => setDisplayed(1)}
+          >
+            1
+          </button>
+          <button
+            className={"change_btn " + (displayedData === 2 ? "active-c" : "")}
+            onClick={() => setDisplayed(2)}
+          >
+            2
+          </button>
+          <button
+            className={"change_btn " + (displayedData === 3 ? "active-c" : "")}
+            onClick={() => setDisplayed(3)}
+          >
+            3
+          </button>
+          <button
+            className={"change_btn " + (displayedData === 4 ? "active-c" : "")}
+            onClick={() => setDisplayed(4)}
+          >
+            4
+          </button>
+          <button
+            className={"change_btn " + (displayedData === 5 ? "active-c" : "")}
+            onClick={() => setDisplayed(5)}
+          >
+            5
+          </button>
+          <button
+            className={"change_btn " + (displayedData === 6 ? "active-c" : "")}
+            onClick={() => setDisplayed(6)}
+          >
+            6
+          </button>
+          <button
+            className={"change_btn " + (displayedData === 7 ? "active-c" : "")}
+            onClick={() => setDisplayed(7)}
+          >
+            7
+          </button>
+          <button
+            className={"change_btn " + (displayedData === 8 ? "active-c" : "")}
+            onClick={() => setDisplayed(8)}
+          >
+            8
+          </button>
+          <button
+            className={"change_btn " + (displayedData === 9 ? "active-c" : "")}
+            onClick={() => setDisplayed(9)}
+          >
+            9
+          </button>
         </div>
+        <br />
+        <div className="community-content">
+          <div className="nav-communities">
+            <button
+              onClick={() => toggleView(false)}
+              className={view ? "btn-active" : ""}
+            >
+              List
+            </button>
+            <button
+              className={view ? "" : "btn-active"}
+              onClick={() => toggleView(true)}
+            >
+              Text Analysis
+            </button>
+          </div>
+
+          {view ? (
+            <ArtistStats displayedData={displayedData} />
+          ) : (
+            <ArtistList displayedData={displayedData} full_data={full_data} />
+          )}
+        </div>
+      </div>
+    </React.Fragment>
+  );
+};
+
+const ArtistList = ({ displayedData, full_data }) => {
+  return (
+    <React.Fragment>
+      <h5 style={{ "margin-top": 3, "margin-bottom": 3 }}>
+        Artists in the community n°{displayedData}
+      </h5>
+      <div>
+        <div className="artist-collab-div">
+          {full_data[displayedData].nodes.map(node => {
+            if (node.weight) {
+              return (
+                <span className="artist-collab">
+                  {node.id} <span className="nb-icon">{node.weight}</span>
+                </span>
+              );
+            }
+            return null;
+          })}
+        </div>
+      </div>
+    </React.Fragment>
+  );
+};
+
+const ArtistStats = ({ displayedData }) => {
+  const sentimentScore = {
+    "0": 4.258,
+    "1": 4.314,
+    "2": 4.307,
+    "3": 4.305,
+    "4": 4.088,
+    "5": 4.098,
+    "6": 4.969,
+    "7": 4.5,
+    "8": 4.589,
+    "9": "N/A"
+  };
+  return (
+    <React.Fragment>
+      <h3>Statistics</h3>
+      <div>
+        <span className="kpi">
+          Happiness Score :{" "}
+          <b>{(sentimentScore[displayedData] * 10).toFixed(2)} % </b>
+        </span>
       </div>
     </React.Fragment>
   );
