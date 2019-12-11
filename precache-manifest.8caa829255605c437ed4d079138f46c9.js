@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a0562017c3e5396af9ed5463dfd59345",
+    "revision": "d3cbbd082af399186047d5ff43f7a916",
     "url": "/spotify-network-front/index.html"
   },
   {
-    "revision": "e1abee476ea50082cc64",
-    "url": "/spotify-network-front/static/css/main.78345ce9.chunk.css"
+    "revision": "3233922b402a3b02ae21",
+    "url": "/spotify-network-front/static/css/main.8be4abcb.chunk.css"
   },
   {
-    "revision": "56edcafcc5d775a50140",
-    "url": "/spotify-network-front/static/js/2.fe987cdd.chunk.js"
+    "revision": "e3d4e9a404001918aa7f",
+    "url": "/spotify-network-front/static/js/2.68f6b39c.chunk.js"
   },
   {
-    "revision": "e1abee476ea50082cc64",
-    "url": "/spotify-network-front/static/js/main.3e201a06.chunk.js"
+    "revision": "3233922b402a3b02ae21",
+    "url": "/spotify-network-front/static/js/main.bf0bade8.chunk.js"
   },
   {
     "revision": "f9eb46488e7cea1935ff",
@@ -22,6 +22,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f5f82c906c90390912b1b50bb67e2b11",
     "url": "/spotify-network-front/static/media/draw.f5f82c90.svg"
+  },
+  {
+    "revision": "0283c8ef2783166e32d018f9565519da",
+    "url": "/spotify-network-front/static/media/plot1.0283c8ef.png"
+  },
+  {
+    "revision": "9a63b941f9cd72f6934957f88fb493d8",
+    "url": "/spotify-network-front/static/media/plot2.9a63b941.png"
+  },
+  {
+    "revision": "27324c0f76e867186d9796864f6cdd77",
+    "url": "/spotify-network-front/static/media/plot3.27324c0f.png"
   },
   {
     "revision": "67c99dc0d15f72abcb03933a4c5ca2c3",

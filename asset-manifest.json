@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/spotify-network-front/static/css/main.78345ce9.chunk.css",
-    "main.js": "/spotify-network-front/static/js/main.3e201a06.chunk.js",
-    "main.js.map": "/spotify-network-front/static/js/main.3e201a06.chunk.js.map",
+    "main.css": "/spotify-network-front/static/css/main.8be4abcb.chunk.css",
+    "main.js": "/spotify-network-front/static/js/main.bf0bade8.chunk.js",
+    "main.js.map": "/spotify-network-front/static/js/main.bf0bade8.chunk.js.map",
     "runtime-main.js": "/spotify-network-front/static/js/runtime-main.83eda833.js",
     "runtime-main.js.map": "/spotify-network-front/static/js/runtime-main.83eda833.js.map",
-    "static/js/2.fe987cdd.chunk.js": "/spotify-network-front/static/js/2.fe987cdd.chunk.js",
-    "static/js/2.fe987cdd.chunk.js.map": "/spotify-network-front/static/js/2.fe987cdd.chunk.js.map",
+    "static/js/2.68f6b39c.chunk.js": "/spotify-network-front/static/js/2.68f6b39c.chunk.js",
+    "static/js/2.68f6b39c.chunk.js.map": "/spotify-network-front/static/js/2.68f6b39c.chunk.js.map",
     "index.html": "/spotify-network-front/index.html",
-    "precache-manifest.ee4a00d10f3b24b70db90cee886824cd.js": "/spotify-network-front/precache-manifest.ee4a00d10f3b24b70db90cee886824cd.js",
+    "precache-manifest.8caa829255605c437ed4d079138f46c9.js": "/spotify-network-front/precache-manifest.8caa829255605c437ed4d079138f46c9.js",
     "service-worker.js": "/spotify-network-front/service-worker.js",
-    "static/css/main.78345ce9.chunk.css.map": "/spotify-network-front/static/css/main.78345ce9.chunk.css.map",
+    "static/css/main.8be4abcb.chunk.css.map": "/spotify-network-front/static/css/main.8be4abcb.chunk.css.map",
     "static/media/draw.svg": "/spotify-network-front/static/media/draw.f5f82c90.svg",
+    "static/media/plot1.png": "/spotify-network-front/static/media/plot1.0283c8ef.png",
+    "static/media/plot2.png": "/spotify-network-front/static/media/plot2.9a63b941.png",
+    "static/media/plot3.png": "/spotify-network-front/static/media/plot3.27324c0f.png",
     "static/media/sentiment0.png": "/spotify-network-front/static/media/sentiment0.67c99dc0.png",
     "static/media/sentiment1.png": "/spotify-network-front/static/media/sentiment1.0c958476.png",
     "static/media/sentiment2.png": "/spotify-network-front/static/media/sentiment2.9baf81e7.png",
@@ -35,8 +38,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.83eda833.js",
-    "static/js/2.fe987cdd.chunk.js",
-    "static/css/main.78345ce9.chunk.css",
-    "static/js/main.3e201a06.chunk.js"
+    "static/js/2.68f6b39c.chunk.js",
+    "static/css/main.8be4abcb.chunk.css",
+    "static/js/main.bf0bade8.chunk.js"
   ]
 }
