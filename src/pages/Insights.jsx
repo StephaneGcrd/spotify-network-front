@@ -84,7 +84,7 @@ const Insigths = () => {
           })}
         </div>
         <div className="component-in">
-          <h3> Degree histogram</h3>
+          <h3> Degree distribution histogram</h3>
           <img src={plot1} />
         </div>
 

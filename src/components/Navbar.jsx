@@ -20,6 +20,10 @@ function Navbar() {
       <Link to="communities">
         <h5>Communities</h5>
       </Link>
+
+      <a href="Master_Explainer_Notebook.ipynb">
+        <h5>Notebook</h5>
+      </a>
     </div>
   );
 }

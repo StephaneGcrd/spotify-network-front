@@ -52,7 +52,7 @@ function App() {
                 <hr />
                 <div>
                   <i>
-                    Atharva Brath (s191397), Anelia Pethrova (s191938),Stéphane
+                    Atharva Bhat (s191397), Anelia Petrova (s191938),Stéphane
                     Guichard (s192576)
                   </i>
                 </div>

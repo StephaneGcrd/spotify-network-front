@@ -30,6 +30,7 @@ const Build = () => {
         <a href="artistssongdataset.json">Artist dataset (JSON)</a>
         <a href="lyrics_final.zip">Songs dataset (Compressed)</a>
         <a href="rapGraph.json">Network (JSON)</a>
+        <a href="song_info.csv">Song List (CSV)</a>
       </div>
       <div className="col-1-6 padded ">
         <h5>Notebook</h5>
