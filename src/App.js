@@ -4,7 +4,7 @@ import NetworkRap from "./pages/NetworkRap";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Communities from "./pages/Communities";
-import Insigths from "./pages/Insights";
+import Insights from "./pages/Insights";
 import draw from "./draw.svg";
 import Build from "./pages/Build";
 
@@ -27,8 +27,8 @@ function App() {
               <Build />
             </Route>
 
-            <Route path="/insigths">
-              <Insigths />
+            <Route path="/insights">
+              <Insights />
             </Route>
             <Route exactPath="/">
               <div className="col-1-6">

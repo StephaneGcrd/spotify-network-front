@@ -14,8 +14,8 @@ function Navbar() {
       <Link to="build">
         <h5>Building the network</h5>
       </Link>
-      <Link to="insigths">
-        <h5>Insigths</h5>
+      <Link to="insights">
+        <h5>Insights</h5>
       </Link>
       <Link to="communities">
         <h5>Communities</h5>

@@ -22,7 +22,14 @@ const Build = () => {
       </div>
       <div className="col-4-6 padded">
         <h5>Lyrics</h5> <hr />
-        Rap Genius
+        We collected lyrics data through the Genius database. We first used the
+        Spotify API to find out the most popular songs of all time by each
+        artist. <br />
+        <br />
+        Afterwards, we scraped the top 5 songs per performer using the Genius
+        API. We ended up collecting around 4500 JSON files amounting to 18 MB.
+        Each JSON file contains basic song information: artist, album, year of
+        release, and lyrics.
       </div>
       <div className="col-1-6 padded datalink">
         <h5>Download datasets</h5>

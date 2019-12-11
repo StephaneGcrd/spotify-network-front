@@ -27,7 +27,7 @@ const top3 = [
   ["Lil Wayne", 0.17520973480840035]
 ];
 
-const Insigths = () => {
+const Insights = () => {
   return (
     <React.Fragment>
       <div className="col-1-6 in-kp">
@@ -107,4 +107,4 @@ const Insigths = () => {
   );
 };
 
-export default Insigths;
+export default Insights;
