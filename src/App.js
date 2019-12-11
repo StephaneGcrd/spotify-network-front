@@ -55,6 +55,10 @@ function App() {
                     Atharva Bhat (s191397), Anelia Petrova (s191938),Stéphane
                     Guichard (s192576)
                   </i>
+                  <br />
+                  <a href="https://github.com/StephaneGcrd/spotify-network-front">
+                    <i>Website github</i>
+                  </a>
                 </div>
                 <img src={draw} />
               </div>
